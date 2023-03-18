@@ -1,19 +1,21 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import './navbar.scss';
 import {HiMenuAlt4, HiX} from 'react-icons/hi';
 import {motion} from 'framer-motion';
-import { Link } from 'react-router-dom';
-
 import { images } from '../../assets';
+import { NavbarContext } from '../../Context/NavbarContext';
 
 const Navbar = () => {
+
+  const {appNavbar} = useContext(NavbarContext)
+
   const [toggle, setToggle] = useState(false);
 
 
   return (
-    <div className='w-[100%] flex justify-between items-center bg-black-col px-[2rem] py-[1rem] app__navbar'>
+    <div className={`w-[100%] flex justify-between items-center bg-black-col px-[2rem] py-[1rem] ${appNavbar}`}>
       <div className="flex justify-start items-center app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <img src={images.logo2} alt="logo" />
       </div>
       {/* we map through the list of the links */}
       <ul className="flex justify-center items-center list-none  app__navbar-links">
@@ -21,9 +23,11 @@ const Navbar = () => {
           <li className=" cursor-pointer font-bold flex-col app__flex p-text" key={`link-${item}`}> 
             <div />
 
-            {item==="home"? 
+            {/* {item==="home"? 
               <Link to="/">{item}</Link> : <a href={`#${item}`}>{item}</a>
-            }
+            } */} 
+
+            <a href={`#${item}`}>{item}</a>
             
           </li>
 

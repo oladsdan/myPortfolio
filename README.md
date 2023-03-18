@@ -3,6 +3,23 @@
 ### Dependencies
     install react-router-dom for router
     install tailwindcss for css framework (npm install -D tailwindcss, npx tailwindcss init)
+    "@emailjs/browser": "^3.10.0",
+    "@fortawesome/free-brands-svg-icons":
+    "@fortawesome/free-solid-svg-icons": 
+    "@fortawesome/react-fontawesome": 
+    "@sanity/client": 
+    "@sanity/image-url":
+    "@testing-library/jest-dom": 
+    "@testing-library/react": 
+    "@testing-library/user-event": 
+    "animate.css": 
+    "framer-motion": 
+    "loaders.css":  
+    "react-icons": 
+    "react-router-dom": "^6.8.1",
+    "react-tooltip": "^4.2.21",
+    "sass": "^1.58.3",
+    
 
 ### Code
 #### Navbar

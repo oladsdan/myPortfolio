@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    margin: 50px 4rem;
+    // margin: 50px 4rem;
     width: 100%;
   
     // disable the default padding styles
@@ -57,7 +57,7 @@
   }
   
   .app__header-badge {
-    width: 100%;
+    width: 30rem;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -177,11 +177,16 @@
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
+    
   
     img {
       width: 100%;
       object-fit: contain;
       z-index: 1;
+      top: 5px; // just added
+      right: 20px; // just added
+      //bottom: -15px;
+      position: absolute; //just added
     }
   
     .overlay_circle {

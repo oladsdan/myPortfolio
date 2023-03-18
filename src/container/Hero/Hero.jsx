@@ -23,10 +23,8 @@ const Hero = () => {
   };
 
   const [letterClass, setLetterClass] = useState("text-animate")
-  const nameArray =['S', 'a', 'n', 'u','s','i']
-  const jobArray  = ['w','e','b',' ', 'd','e','v','e','l','o','p','e','r']
-  //const greetings = ['H', 'e', 'l','l','o',  'I', 'a','m']
-
+  const nameArray =['S', 'a', 'n', 'u','s','i', ]
+  
 
 
 
@@ -37,7 +35,7 @@ const Hero = () => {
 
   return (
     
-    <div  className="app__header app__flex w-[100vh] mt-[50px]">
+    <div  className="app__header app__container app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1]}}
         transition = {{ duration: 0.5}}
@@ -68,7 +66,7 @@ const Hero = () => {
       className="app__header-img"
     >
       {/* the persons profile */}
-      <img src={images.profile} alt="profile_bg" /> 
+      <img src={images.profile3} alt="profile_bg" /> 
     <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
@@ -83,7 +81,7 @@ const Hero = () => {
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+      {[images.python, images.react, images.sass].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>

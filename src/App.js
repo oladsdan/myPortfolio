@@ -9,7 +9,7 @@ import Abouts from './components/Abouts/Abouts';
 
 function App() {
   return (
-    <div className="App flex">
+    <div className="">
       <BrowserRouter>
         <div className="flex">
           <div className="px-[2rem]">
@@ -20,7 +20,7 @@ function App() {
         </div>
         
 
-        <div className="px-[2rem]">
+        <div className="mx-[20px]  w-[100%]">
 
           <Routes>
             <Route path='/' element={<Home />} />

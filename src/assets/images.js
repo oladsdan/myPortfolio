@@ -33,6 +33,8 @@ import bolt from './bolt.png';
 import nb from './nb.png';
 import skype from './skype.png';
 import spotify from './spotify.png';
+import logo2 from './logo2.png';
+import profile3 from './profiles3.png';
 
 export default {
   email,
@@ -68,4 +70,6 @@ export default {
   nb,
   skype,
   spotify,
+  logo2,
+  profile3
 };
