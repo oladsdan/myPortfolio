@@ -10,6 +10,13 @@
     background-repeat: repeat;
     overflow: hidden;
 
+    @media screen and (max-width: 1000px) {
+        position: relative;
+        overflow: scroll;
+
+        padding: 0 5rem;
+        
+    }
 
 
 
@@ -45,6 +52,12 @@
                 position: relative;
                 margin-bottom: 40px;
                 left: 10px;
+
+                @media screen and (max-width: 800px) {
+                    font-size: 40px;
+                    
+                }
+
     
                 &::before{
                     content: '<h1>'; 
