@@ -11,9 +11,9 @@
     overflow: hidden;
 
     @media screen and (max-width: 1000px) {
-        position: relative;
-       //overflow: scroll;
-        margin-top: 50px;
+        //position: relative;
+        overflow: auto;
+        margin-top: 0;
 
         padding-right: 3rem;
         
@@ -221,10 +221,15 @@
     }
     
     .copyrite {
-        position: absolute;
+       // position: absolute;
         bottom: 0;
         right: 0;
         margin: 2rem 2rem;
+
+        @media screen and (max-width: 1000px) {
+            margin-right: 2rem;
+            position: inherit;
+        }
     }
         
     

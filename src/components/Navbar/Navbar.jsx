@@ -35,14 +35,14 @@ const Navbar = () => {
       </ul>
 
       {/* we code the navbar for the menu ones */}
-      <div className="w-[35px] h-[35px] rounded-[50%] relative flex justify-center items-center app__navbar-menu">
+      <div className="w-[100px] h-[35px] rounded-[50%] relative right-4 flex justify-center items-center app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true )} />
 
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0]}}
             transition={{ duration: 0.85, ease: 'easeOut'}} >
-              <HiX onClick={() => setToggle(false)} />
+              <HiX onClick={() => setToggle(false)} className="absolute left-1" />
               <ul>
                 {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                   <li key={item}>

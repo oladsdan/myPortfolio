@@ -72,6 +72,10 @@
             width: 70%;
             height: 70%;
             color: var(--secondary-color);
+            display: flex;
+            justify-content: flex-start;
+            //margin: 5rem 1rem;
+            //margin-left: 2rem;
         }
 
         div {

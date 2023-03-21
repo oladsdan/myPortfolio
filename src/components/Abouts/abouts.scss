@@ -139,6 +139,10 @@
         @media screen and (max-width: 1000px) {
             width: 100%;
             top: 12%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 5rem;
+            margin-right: 2rem;
             
         }
     }
