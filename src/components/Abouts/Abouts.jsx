@@ -25,7 +25,7 @@ function About () {
 
     useEffect(()=> {
         setTimeout(() => {
-            setLetterClass('text-animate-hover')
+            setLetterClass('text-h-hover')
         }, 3000)
 
     },[])

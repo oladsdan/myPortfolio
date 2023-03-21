@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { About, Footer, Hero, Skills, Work } from "../../container";
 import { NavbarContext } from "../../Context/NavbarContext";
+import './index.scss';
 
 
 function Home () {
@@ -15,7 +16,7 @@ function Home () {
 
 
     return (
-        <div className=" overflow-x-hidden ml-[35px]">
+        <div className=" overflow-x-hidden ml-[35px] app__home">
             <Hero />
             <About />
             <Work />
