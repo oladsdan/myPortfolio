@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <div className={`w-[100%] flex justify-between items-center bg-black-col px-[2rem] py-[1rem] ${appNavbar}`}>
+    <div className={`w-[100%] flex justify-between relative items-center bg-black-col px-[2rem] py-[1rem] ${appNavbar}`}>
       <div className="flex justify-start items-center app__navbar-logo">
         <img src={images.logo2} alt="logo" />
       </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* we code the navbar for the menu ones */}
+      {/* we code the navbar for the smallerdevices ones */}
       <div className="w-[100px] h-[35px] rounded-[50%] relative right-4 flex justify-center items-center app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true )} />
 
